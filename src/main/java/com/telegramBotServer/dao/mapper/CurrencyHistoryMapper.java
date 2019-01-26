@@ -1,6 +1,6 @@
-package com.template.dao.mapper;
+package com.telegramBotServer.dao.mapper;
 
-import com.template.domain.model.CurrencyHistory;
+import com.telegramBotServer.domain.model.CurrencyHistory;
 import org.apache.ibatis.annotations.Mapper;
 import org.apache.ibatis.annotations.Param;
 

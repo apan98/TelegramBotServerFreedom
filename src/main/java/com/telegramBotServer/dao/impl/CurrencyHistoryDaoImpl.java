@@ -1,10 +1,10 @@
-package com.template.dao.impl;
+package com.telegramBotServer.dao.impl;
 
-import com.template.dao.CurrencyDao;
-import com.template.dao.CurrencyHistoryDao;
-import com.template.dao.jpa.CurrencyHistoryRepository;
-import com.template.dao.mapper.CurrencyHistoryMapper;
-import com.template.domain.model.CurrencyHistory;
+import com.telegramBotServer.dao.CurrencyDao;
+import com.telegramBotServer.dao.CurrencyHistoryDao;
+import com.telegramBotServer.dao.jpa.CurrencyHistoryRepository;
+import com.telegramBotServer.dao.mapper.CurrencyHistoryMapper;
+import com.telegramBotServer.domain.model.CurrencyHistory;
 import lombok.AllArgsConstructor;
 import org.springframework.stereotype.Service;
 

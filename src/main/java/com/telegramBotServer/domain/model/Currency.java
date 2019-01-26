@@ -1,4 +1,4 @@
-package com.template.domain.model;
+package com.telegramBotServer.domain.model;
 
 import lombok.Data;
 

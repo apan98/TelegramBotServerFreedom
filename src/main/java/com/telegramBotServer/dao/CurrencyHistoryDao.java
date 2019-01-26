@@ -1,6 +1,6 @@
-package com.template.dao;
+package com.telegramBotServer.dao;
 
-import com.template.domain.model.CurrencyHistory;
+import com.telegramBotServer.domain.model.CurrencyHistory;
 
 import java.util.List;
 
