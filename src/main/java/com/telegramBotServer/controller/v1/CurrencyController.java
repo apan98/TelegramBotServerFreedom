@@ -1,5 +1,6 @@
 package com.telegramBotServer.controller.v1;
 
+import com.telegramBotServer.dao.CurrencyDao;
 import com.telegramBotServer.dao.CurrencyHistoryDao;
 import com.telegramBotServer.domain.model.CurrencyHistory;
 import lombok.AllArgsConstructor;
@@ -14,14 +15,20 @@ import static com.telegramBotServer.controller.RestConstant.V1;
 
 @RestController
 @AllArgsConstructor
-@RequestMapping(V1 + "/currency")
+@RequestMapping(V1 + "/currencies")
 public class CurrencyController {
 
     private CurrencyHistoryDao currencyHistoryDao;
+    private CurrencyDao currencyDao;
 
     @GetMapping("/{currencyCode}")
     Double getCurrentCurrency(@PathVariable("currencyCode") String currencyCode) {
         return currencyHistoryDao.getLastByCode(currencyCode).getValue();
+    }
+
+    @GetMapping
+    List<String> getCurrencies() {
+        return currencyDao.getCodeCurrencies();
     }
 
     @GetMapping("/{currencyCode}/history")

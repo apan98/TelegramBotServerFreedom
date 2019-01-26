@@ -27,7 +27,7 @@ public class ScheduledWriteCurrencyHistory {
 
 
 
-    @Scheduled(fixedRate = 1000)
+    @Scheduled(fixedRate = 10000)
     @SneakyThrows
     public void reportCurrentTime() {
         OkHttpClient okHttpClient = new OkHttpClient();
