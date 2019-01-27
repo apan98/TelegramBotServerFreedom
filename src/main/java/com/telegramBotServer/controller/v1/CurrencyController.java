@@ -27,7 +27,7 @@ public class CurrencyController {
     }
 
     @GetMapping
-    List<String> getCurrencies() {
+    List<String> getCodeCurrencies() {
         return currencyDao.getCodeCurrencies();
     }
 
