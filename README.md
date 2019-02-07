@@ -1,4 +1,6 @@
-# template
+# TelegramBotServerFreedom
+
+Испытательное задание. Дергает API XML банка КЗ, для получения актуальных валют. И сохранет историю изменений
 ENVIROMENT:
 * DB_HOST=localhost
 * DB_PORT=5432
